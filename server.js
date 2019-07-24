@@ -24,6 +24,7 @@ app.get("/api/hello", function (req, res) {
   res.json({greeting: 'hello API'});
 });
 
+// solution for getting the valid timestamp back
 app.get('/api/timestamp/:date_string',(req,res)=>{
   let date = new Date(req.params.date_string);
   let utcDate =date.toUTCString();
